@@ -1,0 +1,201 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Scoresheet</title>
+  </head>
+  <body>
+    <h1>Scoresheet</h1>
+    <div class="container">
+      <div class="col-12 table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Last name</th>
+              <th>First name</th>
+              <th>ACT #1</th>
+              <th>ACT #2</th>
+              <th>ACT #3</th>
+              <th>ACT #4</th>
+              <th>ACT #5</th>
+              <th>ACT #6</th>
+              <th>ACT #7</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>Ackerman</td>
+            <td>Mikasa</td>
+            <td class="table-success">90%</td>
+            <td class="table-success">95%</td>
+            <td class="table-success">95%</td>
+            <td class="table-success">95%</td>
+            <td class="table-success">95%</td>
+            <td class="table-success">95%</td>
+            <td class="table-success">95%</td>
+          </tr>
+          <tr>
+            <td>Shelby</td>
+            <td>Thomas</td>
+            <td>80%</td>
+            <td>78%</td>
+            <td>78%</td>
+            <td class="table-danger">63%</td>
+            <td>78%</td>
+            <td>78%</td>
+            <td>78%</td>
+          </tr>
+          <tr class="table-warning">
+            <td>Escobar</td>
+            <td>Pablo</td>
+            <td>75%</td>
+            <td>68%</td>
+            <td>68%</td>
+            <td>68%</td>
+            <td>68%</td>
+            <td>68%</td>
+            <td>68%</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <h1>Quiz</h1>
+    <div class="container">
+      <form>
+        <div class="row">
+          <div class="col-lg-1">
+            <label for="name">Name: </label>
+          </div>
+          <div class="col-lg-4">
+            <input
+              type="text"
+              id="name"
+              placeholder="ex. Daiben Sanchez"
+              class="form-control"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="q1">Who is the smartest scout?</label>
+          <select class="form-select" name="q1" id="q1">
+            <option disabled selected>Select one</option>
+            <option value="option1">Armin Arlert</option>
+            <option value="option2">Annie Leonhart</option>
+            <option value="option3">Bertoldt Hoover</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <label>Ano ang right?</label>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              value="a1"
+              name="q2"
+              id="a1"
+            /><label class="form-check-label" for="a1">Kanan</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              value="a2"
+              name="q2"
+              id="a2"
+            /><label class="form-check-label" for="a2">Tama</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              class="form-check-input"
+              value="a3"
+              name="q2"
+              id="a3"
+            /><label class="form-check-label" for="a3">Karapatan</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <label>What is love?</label>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="a4"
+              id="a4"
+            /><label class="form-check-label" for="a4"
+              >Baby don't hurt me</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="a5"
+              id="a5"
+            /><label class="form-check-label" for="a5">TWICE Song</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="a6"
+              id="a6"
+            /><label class="form-check-label" for="a6">Me</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="phone_num" class="form-label"
+            >What is Manny Pacquiao's phone number?</label
+          >
+          <div class="input-group">
+            <span class="input-group-text">+63</span>
+            <input type="text" class="form-control" id="phone_num" />
+          </div>
+        </div>
+        <div class="row">
+          <label for="phone_num" class="form-label"
+            >What is Manny Pacquiao's email?</label
+          >
+          <div class="input-group">
+            <input type="text" class="form-control" id="email" />
+            <span class="input-group-text">@gmail.com</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <label class="form-label">Mother's name:</label>
+          <div class="input-group">
+            <span class="input-group-text">Mother's first name: </span>
+            <input type="text" class="form-control" id="mother-first-name" />
+            <span class="input-group-text">Mother's last name:</span>
+            <input type="text" class="form-control" id="mother-last-name" />
+          </div>
+        </div>
+        <div class="row mt-2 mb-5">
+          <div class="form-floating">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="email"
+            />
+            <label for="email" style="color: gray">Email address</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

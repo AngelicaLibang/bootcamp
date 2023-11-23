@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Form</title>
+</head>
+<body>
+    <h1>Voter Registration</h1>
+<form>    
+    <label for="first_name">First Name:</label>
+    <input  type="text" 
+            placeholder="ex.Juan" 
+            id="first_name">
+            <br/>
+    <label for="last_name">Last Name:</label>
+    <input type="text" 
+            placeholder="ex.dela Cruz"
+            id="last_name">
+            <br/>
+    <label for="email_address">Email Address:</label>
+    <input type="email"
+            placeholder="ex.jdelacruz@gmail.com"
+            id="email_address">
+            <br/>
+    <label for="pass">Password:</label>
+    <input type="password"
+            placeholder="atleast 6 characters"
+            id="pass">
+            <br/>
+    <label for="con_pw">Confirm Password:</label>
+    <input type="password"
+            placeholder="re-enter password"
+            id="con_pw">
+            <br/>
+    <label for="birthdate">Birthdate</label>
+    <input type="date"
+            id="birthdate">
+            <br/>
+    <label for="excitement">How excited are you to vote?</label>
+    <input type="range" 
+            id="excitement">
+            <br/>
+    <label for="civil_status">Civil Status:</label>
+    <select name="civil_status" id="civil_status" >
+        <option value="Single">Single</option>
+        <option value="Married">Married</option>
+        <option value="Widowed">Widowed</option>
+        <option value="Separated">Separated</option>
+    </select>
+    <label for="children">Number of Children:</label>
+    <input type="number"
+            placeholder="ex.2"
+            value="0"
+            id="children"
+            min="0">
+            <br/>
+    <label for="id_pic">Upload picture of  voter's ID</label>
+    <input type="file" id="id_pic" /><br/>
+
+    <label>Driver's License:</label>
+    <input type="text"
+            id="driver_license"
+            minlength="13"
+            maxlength="13"
+            required
+            disabled
+            placeholder="ex.E12-00-000000">
+            <br/>
+    <label for="feedback">Provide feedback on the registration process:</label><br/>
+    <textarea placeholder="Enter your response." rows="5" cols="40"></textarea>
+    <br/>
+
+    <input type="submit" value="Submit Registration Form">
+</form>
+<form>
+    <h1>Your Ballot</h1>
+    <input type="radio"
+            name="president"
+            value="Duterte"
+            id="president1"/>
+    <label for="president1">Duterte</label><br/>
+    <input type="radio"
+            name="president"
+            value="Leni"
+            id="president2"/>
+    <label for="president2">Leni</label><br/>
+    <input type="radio"
+            name="president"
+            value="Estrada"
+            id="pressident3"
+        
+</form>
+</body>
+</html>

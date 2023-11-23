@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISCP Employee Registration Form</title>
+</head>
+<body>
+    <h1>ISCP Employee Registration Form</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/c9/ "Seal_of_the_International_State_College_of_the_Philippines.png" alt="logo for ISCP"/><br/>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/aCUhfPAyDHY?si=QaLJOBZU0eJU14hM"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br/>
+    <h2>Basic Information</h2>
+    <form>
+        <label for="first_name">First Name:</label>
+            <input type="text" placeholder="ex.Juan" id="first_name"><br/>
+        <label for="last_name">Last Name:</label> 
+            <input type="text" placeholder="ex.Dela Cruz" id="last_name"><br/>
+        <label for="place_of_birth">Place of Birth:</label>
+            <input type="place" placeholder="ex.Tanauan Batangas."  id="place_of_birth"><br/>
+        <label for="birthdate">Birthdate</label>
+            <input type="date" id="birthdate"><br/>
+            
+        <label for="civil_status">Civil Status:</label>
+            <select name="civil_status" id="civil_status">
+              <option disabled selected>Select One...</option>
+              <option disabled>----------</option>
+              <option value="single"> Single</option>
+              <option value="Married">Married</option>
+              <option value="separated">Separated</option>
+              <option value="widowed">Widowed</option>
+              <option value="Other">Other</option>
+            </select>
+            <br/>
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+            <option disabled selected>Select</option>
+            <option disabled > ------- </option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option valkue="other">Other</option>
+        </select>
+        <br/>
+        <label for="mname">Mother's Maiden Name:</label>
+            <input type="text" placeholder="ex.Juanita Juan" id="mname"><br/>
+        <label for="fname">Father's name:</label>
+            <input type="text" placeholder="ex.Juanito dela Cruz" id="fname"><br/>
+    </form>
+    <form>
+        <h1>Contact Information</h1>
+        <label for="email">Email Address:</label>
+              <input type="email" placeholder="ex.jdelacruz@gmail.com" id="email"><br/>
+        <label>Contact Number(mobile):</label>
+              <input
+                type="text"
+                id="contact_num"
+                minlength="11"
+                maxlength="11"
+                required
+                disabled
+                placeholder="ex. 09123456789"
+              /><br />
+        <label>Contact Number(landline):</label>
+              <input
+                type="text"
+                id="contact_num2"
+                minlength="10"
+                maxlength="10"
+                required
+                disabled
+                placeholder="ex. 0437845766"
+              /><br />
+    </form>
+    <form>
+        <h2>Address</h2>
+        <label for="stnum">Street Number:</label>
+            <input type="text" placeholder="ex.032" id="stnum"><br/>
+        <label for="street_name">Street Name:</label>
+            <input type="text" placeholder="ex.Athens St." id="street_name"><br/>
+        <label for="brgy">Barangay:</label>
+            <input type="text" placeholder="ex.Darasa" id="brgy"><br/>
+        <label for="citytown">City/Town:</label>
+            <input type="text" placeholder="ex.Tanauan" id="city/town"><br/>
+        <label for="province">Province:</label>
+            <input type="text" placeholder="ex.Batangas" id="province"><br/>
+        <label for="fulladd">Full Address:</label><br/>
+            <textarea placeholder="Enter your full address" 
+        rows="2" cols="40"></textarea>
+        <br/>
+        <form>
+            <h2>Government Information</h2>
+            <label>SSS ID:</label>
+        <input
+            type="text"
+            id="sss"
+
+            placeholder="ex. 22-1213122-2"
+      /><br />
+      <label>Pag-Ibig ID</label>
+        <input
+            type="text"
+            id="pagibig_id"
+            placeholder="ex. 22-1213122-2"
+        /><br />
+      <label>Philhealth ID:</label>
+        <input
+            type="text"
+            id="phil_id"
+            placeholder="ex. 22-1213122-2"
+      /><br />
+      
+        <label for="pic"> Upload 2x2 Picture: </label>
+             <input type="file" id="pic" /><br />
+
+        <label for="gid"> Upload picture of governemnt ID: </label>
+            <input type="file" id="gid" /><br />
+        </form>
+        <form>
+            <h2>Account Information</h2>
+            <label for="user">Username:</label><br/>
+                <input
+                    type="username"
+                    placeholder="atleast 8 characters"
+                    id="user">
+                    <br/>
+            <label for="pw">Password: </label>
+            <input
+              type="password"
+              placeholder="at least 6 characters"
+              id="pw"
+            /><br />
+      
+            <label for="confirm_pw">Confirm password: </label>
+            <input
+              type="password"
+              placeholder="re-enter password"
+              id="confirm_pw"
+            /><br />
+            
+            <label for="pro_pic"> Upload Profile Picture:</label>
+            <input type="file" id="pro_pic" /><br />
+        </form>
+        <form>
+            <h2>Have you experience any of this in last 30 days?</h2>
+            <input
+            type="checkbox"
+            name="symptoms"
+            value="coughing"
+            id="symptoms1"
+            />
+            <label for="symptoms1">Coughing</label><br/>
+            <input
+            type="checkbox"
+            name="symptoms"
+            value="Fever"
+            id="symptoms2"
+            />
+            <label for="symptom2">Fever</label><br/>
+            <input
+            type="checkbox"
+            name="symptoms"
+            value="Headache"
+            id="symptoms3"
+            />
+            <label for="symptoms3">Headache</label><br/>
+            <input
+            type="checkbox"
+            name="symptoms"
+            value="Common Cold"
+            id="symptoms4"
+            />
+            <label for="symptoms4">Common Cold</label><br/>
+            <input
+            type="checkbox"
+            name="symptoms"
+            value="Bodyache"
+            id="symptoms5"
+            />
+            <label for="symptoms5">Bodyache</label><br/>
+            <input
+            type="checkbox"
+            name="symptoms"
+            value="Sore Throat"
+            id="symptoms6"
+            />
+            <label for="symptoms6">Sore Throat</label><br/>
+            <input
+            type="checkbox"
+            name="symptoms"
+            value="Tiredness"
+            id="symptoms7"
+            />
+            <label for="symptoms7">Tirednes</label><br/>
+            <input
+            type="checkbox"
+            name="symptoms"
+            value="Loss of Smell"
+            id="symptoms8"
+            />
+            <label for="symptoms8">Loss of Smell</label>
+    <form>
+        <h2>Give a short description about yourself.</h2>
+        <textarea rows="7" cols="40" ></textarea>
+        <br/>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

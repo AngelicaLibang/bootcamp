@@ -1,0 +1,83 @@
+<!-- @format -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            data-bs-toggle="dropdown"
+          >
+            Sort by
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Price</a></li>
+            <li><a class="dropdown-item" href="#">Max # of guests</a></li>
+            <li><a class="dropdown-item" href="#">Room size</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 text-center">
+          <div class="card">
+            <img src="img/suite.jpg" class="card-img-top" alt="hotel room" />
+            <div class="card-body">
+              <p>Suite</p>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#room1"
+              >
+                View Room
+              </button>
+              <div class="modal fade" id="room1" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title"><strong>Suite</strong></p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/suite.jpg"
+                            alt="hotel room"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Suite</h1>
+                          <p>PHP 4,790</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Close
+                      </button>
+                      <button class="btn btn-primary">Book Room</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

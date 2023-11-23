@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISCP Employee Registration Form</title>
+  </head>
+  <body>
+    <h1>ISCP Employee Registration Form</h1>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/en/c/c9/Seal_of_the_International_State_College_of_the_Philippines.png"
+      alt="logo of ISCP"
+    />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/aCUhfPAyDHY?si=32Pw3MkObR5H7t-r"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <form>
+      <h2>Basic information</h2>
+      <label for="first_name">First name: </label>
+      <input type="text" id="first_name" placeholder="ex. Juan" /><br />
+
+      <label for="last_name">Last name: </label>
+      <input type="text" id="last_name" placeholder="ex. de la Cruz" /><br />
+
+      <label for="place_of_birth">Place of birth: </label>
+      <input
+        type="text"
+        id="place_of_birth"
+        placeholder="ex. San Juan, La Union"
+      /><br />
+
+      <label for="civil_status">Civil status: </label>
+      <select name="civil_status" id="civil_status">
+        <option disabled selected>Select one...</option>
+        <option value="single">Single</option>
+        <option value="married">Married</option>
+        <option value="widowed">Widowed</option>
+        <option value="separated">Separated</option>
+        <br /></select
+      ><br />
+
+      <span>Gender:</span>
+      <input type="radio" name="gender" id="male" value="male" />
+      <label for="male">Male</label>
+
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="female">Female</label>
+
+      <input type="radio" name="gender" id="other" value="other" />
+      <label for="other">Other</label>
+
+      <label for="mother_name">Mother's maiden name: </label>
+      <input
+        type="text"
+        id="mother_name"
+        placeholder="ex. Maria del Sol"
+      /><br />
+
+      <label for="father_name">Father's name: </label>
+      <input
+        type="text"
+        id="father_name"
+        placeholder="ex. Pedro de la Cruz"
+      /><br />
+
+      <h2>Contact information</h2>
+      <label for="email_address">Email address: </label>
+      <input
+        type="email"
+        id="email_address"
+        placeholder="ex. juandelacruz@gmail.com"
+      /><br />
+
+      <label for="contact_mobile">Contact number (mobile)</label>
+      <input
+        type="text"
+        id="contact_mobile"
+        placeholder="ex. 09561234567"
+      /><br />
+
+      <label for="contact_telephone">Contact number (telephone)</label>
+      <input
+        type="text"
+        id="contact_telephone"
+        placeholder="ex. 09561234567"
+      /><br />
+
+      <h2>Address</h2>
+      <label for="street_number">Street number</label>
+      <input type="text" id="street_number" placeholder="ex. Block 23" /><br />
+
+      <label for="street_name">Street name</label>
+      <input
+        type="text"
+        id="street_name"
+        placeholder="ex. Malaya Street"
+      /><br />
+
+      <label for="barangay">Street name</label>
+      <input type="text" id="barangay" placeholder="ex. Brgy. Ginebra" /><br />
+
+      <label for="city_town">City/Town:</label>
+      <select name="city_town" id="city_town">
+        <option disabled selected>Select one...</option>
+        <option value="aringay">Aringay</option>
+        <option value="bauang">Bauang</option>
+        <option value="caba">Caba</option>
+        <option value="san_fernando">San Fernando</option>
+        <option value="san_juan">San Juan</option></select
+      ><br />
+
+      <label for="province">Province:</label>
+      <select name="province" id="province">
+        <option disabled selected>Select one...</option>
+        <option value="agusan_del_norte">Agusan del Norte</option>
+        <option value="agusan_del_sur">Agusan del Sur</option>
+        <option value="bataan">Bataan</option>
+      </select>
+      <br />
+
+      <label for="address">Full address:</label><br />
+      <textarea
+        id="address"
+        placeholder="ex. Block 13, Katarungan Street, Baguio City, Benguet"
+        cols="40"
+        rows="7"
+      ></textarea>
+
+      <h2>Government information</h2>
+      <label for="sss_id">SSS ID:</label>
+      <input type="text" id="sss_id" placeholder="ex. 33-7913734-2" /><br />
+
+      <label for="pagibig_id">Pag-Ibig ID:</label>
+      <input
+        type="text"
+        id="pagibig_id"
+        placeholder="ex. 1211-0806-5741"
+      /><br />
+
+      <label for="philhealth_id">Philhealth ID:</label>
+      <input
+        type="text"
+        id="philhealth_id"
+        placeholder="ex. 03-025527945-5"
+      /><br />
+
+      <label for="2x2_pic">Upload 2x2 picture:</label>
+      <input type="file" id="2x2_pic" /><br />
+
+      <label for="gov_id">Upload government ID:</label>
+      <input type="file" id="gov_id" /><br />
+
+      <h2>Account information</h2>
+      <label for="username">Username: </label>
+      <input type="text" id="username" placeholder="ex. juan0320" /><br />
+
+      <label for="pw">Password: </label>
+      <input
+        type="password"
+        id="pw"
+        placeholder="ex. at least 6 characters"
+      /><br />
+
+      <label for="confirm_pw">Confirm password: </label>
+      <input
+        type="password"
+        id="confirm_pw"
+        placeholder="re-enter password"
+      /><br />
+
+      <label for="prof_img">Upload profile image:</label>
+      <input type="file" id="prof_img" /><br />
+
+      <h2>Have you experienced any of the following in the last 30 days?</h2>
+      <input type="checkbox" name="symptom1" id="symptom1" value="coughing" />
+      <label for="symptom1">Coughing</label><br />
+      <input type="checkbox" name="symptom2" id="symptom2" value="fever" />
+      <label for="symptom2">Fever</label><br />
+      <input type="checkbox" name="symptom3" id="symptom3" value="headache" />
+      <label for="symptom3">Headache</label><br />
+      <input
+        type="checkbox"
+        name="symptom4"
+        id="symptom4"
+        value="common_cold"
+      />
+      <label for="symptom4">Common cold</label><br />
+      <input type="checkbox" name="symptom5" id="symptom5" value="body_ache" />
+      <label for="symptom5">Body ache</label><br />
+      <input
+        type="checkbox"
+        name="symptom6"
+        id="symptom6"
+        value="sore_throat"
+      />
+      <label for="symptom6">Sore throat</label><br />
+      <input type="checkbox" name="symptom7" id="symptom7" value="tiredness" />
+      <label for="symptom7">Tiredness</label><br />
+      <input
+        type="checkbox"
+        name="symptom8"
+        id="symptom8"
+        value="loss_of_smell"
+      />
+      <label for="symptom8">Loss of smell</label><br />
+      <h2>Give a short description about yourself.</h2>
+      <textarea
+        id="description"
+        placeholder="Describe yourself in 3 or more sentences!"
+      ></textarea
+      ><br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>

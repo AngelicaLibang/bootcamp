@@ -1,0 +1,19 @@
+body {
+    font-family: "Poppins";
+    margin: 0px;
+    background-color: lightblue;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #nav-bar {
+    color: black;
+    width: 100%;
+    text-align: right;
+    padding: 10px 10px;
+    list-style-type: none;
+    font-size: 20px;
+  }
+  li-nav-bar:hover {
+    color: blue;
+  }
